@@ -4,9 +4,11 @@
       <nav class="flex items-center justify-between flex-wrap bg-green-400 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <px-icon class="mr-2" />
-          <span class="font-semibold text-xl tracking-tight">
+          <router-link
+            :to="{ name: 'home' }"
+            class="font-semibold text-xl tracking-tight">
             PlatziExchange
-          </span>
+          </router-link>
         </div>
 
         <div
@@ -26,12 +28,11 @@
   </header>
 </template>
 
-
 <script>
 import PxIcon from "@/components/PxIcon";
 
 export default {
-  name: 'PxHeader',
+  name: "PxHeader",
   components: { PxIcon },
 }
 </script>
